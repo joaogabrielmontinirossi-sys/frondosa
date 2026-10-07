@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Frondosa</title>
+<meta name="description" content="Frondosa — suas tarefas são galhos, suas metas são a copa e o calendário mora no oco da coruja.">
+<meta name="theme-color" content="#1f6f54">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Frondosa">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="stage"><div id="world"></div></div>
+<header id="bar"></header>
+<nav id="dock"></nav>
+<div id="zoom"></div>
+<div id="scrim" data-act="close"></div>
+<aside id="drawer" aria-live="polite"></aside>
+<div id="toast"></div>
+<input type="file" id="filepick" accept=".json,application/json" hidden>
+<script src="store.js"></script>
+<script src="tree.js"></script>
+<script src="sync.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
