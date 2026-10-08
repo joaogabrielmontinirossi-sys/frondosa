@@ -324,7 +324,7 @@ const App = (() => {
     setInterval(() => { if (today() !== day) { day = today(); refresh(); } else renderBar(); }, 60000);
   }
 
-  return { init, synced(changed) { if (changed) refresh(); else { renderBar(); if (view && view.type === 'settings') draw(); } } };
+  return { init, open, synced(changed) { if (changed) refresh(); else { renderBar(); if (view && view.type === 'settings') draw(); } } };
 })();
 
 App.init();
